@@ -135,11 +135,15 @@ We enforce:
 # Repository Structure (Planned)
 
 ```
-/frontend
-/backend
-/docs
-/tests
-/scripts
+codebridge-platform/
+├── frontend/
+├── backend/
+├── docs/
+│   ├── roadmap.md
+│   ├── onboarding.md
+│   ├── contribution-guide.md
+│   └── session-plans.md
+├── README.md
 ```
 
 As the project grows, structure will be refined.
