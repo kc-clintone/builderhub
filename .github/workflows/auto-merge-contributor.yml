@@ -1,0 +1,73 @@
+name: Auto Merge Contributor PR
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check and Merge
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const author = pr.user.login;
+
+            // Check if PR modifies only CONTRIBUTORS.md
+            const files = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pr.number
+            });
+
+            const onlyContributors = files.length === 1 && files[0].filename === 'docs/CONTRIBUTORS.md';
+
+            if (!onlyContributors) {
+              console.log('PR modifies more than CONTRIBUTORS.md, skipping auto-merge');
+              return;
+            }
+
+            // Check if author is a collaborator
+            try {
+              await github.rest.repos.getCollaboratorPermissionLevel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                username: author
+              });
+            } catch (error) {
+              console.log('Author is not a collaborator, skipping');
+              return;
+            }
+
+            // Check if the change is adding the author's name
+            const patch = files[0].patch;
+            const addedLines = patch.split('\n').filter(line => line.startsWith('+')).join('\n');
+            const hasName = addedLines.includes(author) || addedLines.includes(pr.user.name || author);
+
+            if (!hasName) {
+              console.log('PR does not seem to add the author\'s name, skipping');
+              return;
+            }
+
+            // Merge the PR
+            try {
+              await github.rest.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: pr.number,
+                merge_method: 'squash',
+                commit_title: `Add ${pr.user.name || author} to contributors`,
+                commit_message: `Auto-merged first contribution from @${author}`
+              });
+
+              github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                body: `Congratulations @${author}! Your first contribution has been merged. Welcome to the BuilderHub community! 🎉`
+              });
+            } catch (error) {
+              console.log('Error merging PR:', error.message);
+            }

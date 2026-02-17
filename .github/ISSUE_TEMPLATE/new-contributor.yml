@@ -1,0 +1,23 @@
+---
+name: New Contributor Onboarding
+description: Submit this issue to start your journey as a contributor
+title: "[NEW CONTRIBUTOR] "
+labels: ["new-contributor"]
+assignees: []
+---
+
+**Welcome to BuilderHub!**
+
+Thank you for your interest in contributing to this open-source project. To get started:
+
+1. This issue will trigger an invitation to become a collaborator.
+2. Once you accept the invitation, you'll be able to submit pull requests.
+3. Your first contribution will be adding your name to the CONTRIBUTORS.md file.
+
+**Please provide the following information:**
+
+- **Your Name:**
+- **Your GitHub Username:**
+- **Why do you want to contribute?** (Optional)
+
+After submitting this issue, check your email for the collaborator invitation. Once accepted, proceed to make your first PR!

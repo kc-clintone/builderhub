@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 General Discussion
+    url: https://github.com/kc-clintone/builderhub/discussions
+    about: Please ask and answer questions here.
+  - name: 📖 Documentation
+    url: https://github.com/kc-clintone/builderhub/tree/main/docs
+    about: Check our documentation for answers to common questions.
+  - name: 🐛 Security Issue
+    url: https://github.com/kc-clintone/builderhub/security/advisories/new
+    about: Report security vulnerabilities privately.
