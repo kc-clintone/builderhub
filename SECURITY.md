@@ -11,15 +11,12 @@ We actively support the following versions with security updates:
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in BuilderHub, please report it to us as follows:
+Please do not email personal addresses. To report a security issue, use one of the following:
 
-1. **Do not** create a public GitHub issue for the vulnerability
-2. Email zeroday.sh@gmail.com with details about the vulnerability
-3. Include:
-   - A clear description of the vulnerability
-   - Steps to reproduce the issue
-   - Potential impact
-   - Any suggested fixes (optional)
+- Open a private security advisory on GitHub: https://github.com/kc-clintone/builderhub/security/advisories
+- Email our security contact: security@builderhub.dev
+
+We will acknowledge reports within 48 hours and follow up with remediation steps.
 
 ## Response Process
 

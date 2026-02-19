@@ -55,7 +55,7 @@ builderhub/
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Frontend      │    │   Backend API   │    │   Database      │
-│   (React/Next)  │◄──►│   (Node.js)     │◄──►│   (PostgreSQL)  │
+│   (React)       │◄──►│   (Node.js)     │◄──►│   (PostgreSQL)  │
 │                 │    │                 │    │                 │
 │ - Dashboard     │    │ - REST API      │    │ - User data     │
 │ - Learning UI   │    │ - GraphQL       │    │ - Progress      │
@@ -78,7 +78,7 @@ builderhub/
 
 #### Frontend
 
-- **Framework**: Next.js 14+ (React)
+- **Framework**: React.js (with vite)
 - **Styling**: Tailwind CSS
 - **State Management**: Zustand
 - **Forms**: React Hook Form
@@ -165,12 +165,13 @@ src/
 ## Development Workflow
 
 ### 🏃‍♂️ Local Development
+After forking the repository
 
-1. Clone repository
+1. Clone your forked repository
 2. Install dependencies (`npm install`)
 3. Set up environment variables
 4. Run development server (`npm run dev`)
-5. Access at `http://localhost:3000`
+5. Access at `http://localhost:5173`
 
 ### 🚀 Deployment Pipeline
 

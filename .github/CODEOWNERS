@@ -4,14 +4,8 @@
 
 # requested for review
 
-# Global owners - review all changes
-
-- @kc-clintone
-
-# Documentation owners
-
-/docs/ @kc-clintone
-
-# GitHub configuration owners
-
-/.github/ @kc-clintone
+# CODEOWNERS format: path followed by GitHub username(s)
+# Root ownership
+/ @kc-clintone
+docs/ @kc-clintone
+.github/ @kc-clintone

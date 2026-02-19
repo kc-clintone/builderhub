@@ -18,7 +18,7 @@ BuilderHub's mission is to create an inclusive, community-driven learning platfo
 
 ### Contributors
 
-Anyone who contributes to BuilderHub through:
+Anyone can contributes to BuilderHub through:
 
 - Code/documentation changes
 - Issue reports

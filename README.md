@@ -57,16 +57,26 @@ npm run build
 npm start
 ```
 
+## Development
+
+Start the dev server and open the app locally:
+
+```bash
+npm install
+npm run dev   # Vite dev server (default port 5173)
+# open http://localhost:5173
+```
+
 ## Project Structure
 
 ```
 builderhub/
 ├── src/                          # Main application code
 │   ├── components/              # Reusable React components
-│   │   ├── Button.tsx          # Button component
-│   │   └── Layout.tsx          # Main layout component
+│   │   ├── Button.js          # Button component
+│   │   └── Layout.js          # Main layout component
 │   ├── pages/                   # Next.js pages and API routes
-│   │   ├── index.tsx           # Home page
+│   │   ├── index.js           # Home page
 │   │   └── api/                # API endpoints
 │   ├── hooks/                   # Custom React hooks
 │   ├── lib/                     # Utility functions
@@ -75,9 +85,6 @@ builderhub/
 ├── docs/                        # Documentation
 ├── .github/                     # GitHub configuration
 ├── package.json                 # Dependencies and scripts
-├── next.config.js              # Next.js configuration
-├── tsconfig.json               # TypeScript configuration
-└── tailwind.config.js          # Tailwind CSS configuration
 ```
 
 ## Quick Start

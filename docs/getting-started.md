@@ -20,17 +20,26 @@ Before you begin, ensure you have:
 ### 2. Set Up Your Development Environment
 
 ```bash
-# Clone the repository
-git clone https://github.com/kc-clintone/builderhub.git
+# Fork the repository on GitHub:
+# 1) Go to https://github.com/kc-clintone/builderhub and click "Fork".
+# 2) Clone your fork locally (replace <your-username>):
+
+git clone https://github.com/<your-username>/builderhub.git
 cd builderhub
 
-# Install any dependencies (if applicable)
-# npm install  # (if package.json exists)
+# Or using SSH:
+# git clone git@github.com:<your-username>/builderhub.git
+# cd builderhub
 
-# Open in your editor
+# Install dependencies (use npm ci if you have a lockfile)
+npm install
+
+# Start the dev server (Vite default port is 5173)
+npm run dev
+
+# Open the project in VS Code
 code .
 ```
-
 ### 3. Understand the Project Structure
 
 ```
@@ -39,17 +48,17 @@ builderhub/
 ├── CONTRIBUTING.md        # Contribution guidelines
 ├── CODE_OF_CONDUCT.md     # Community standards
 ├── LICENSE                # MIT License
-├── SECURITY.md           # Security policy
-├── CHANGELOG.md          # Version history
-├── docs/                 # Documentation
-│   ├── roadmap.md        # Learning roadmap
+├── SECURITY.md            # Security policy
+├── CHANGELOG.md           # Version history
+├── docs/                  # Documentation
+│   ├── roadmap.md         # Learning roadmap
 │   ├── getting-started.md # This file
-│   └── ...               # Other docs
-├── .github/              # GitHub configuration
-│   ├── ISSUE_TEMPLATE/   # Issue templates
+│   └── ...                # Other docs
+├── .github/               # GitHub configuration
+│   ├── ISSUE_TEMPLATE/    # Issue templates
 │   ├── PULL_REQUEST_TEMPLATE.md
-│   └── workflows/        # CI/CD workflows
-└── .gitignore           # Git ignore rules
+│   └── workflows/         # CI/CD workflows
+└── .gitignore             # Git ignore rules
 ```
 
 ### 4. Start with Phase 0
