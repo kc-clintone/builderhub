@@ -146,6 +146,9 @@ A: Join our [GitHub Discussions](https://github.com/kc-clintone/builderhub/discu
 
 We welcome contributions from everyone! Please see our [Contributing Guide](CONTRIBUTING.md) for detailed information on how to get started.
 
+### Contributors
+[Silas Lelei](http://github.com/Silas-Labs)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

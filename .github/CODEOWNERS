@@ -4,8 +4,15 @@
 
 # requested for review
 
-# CODEOWNERS format: path followed by GitHub username(s)
-# Root ownership
-/ @kc-clintone
-docs/ @kc-clintone
-.github/ @kc-clintone
+# Global owners - review all changes
+
+- @kc-clintone
+- @Silas-Labs
+
+# Documentation owners
+
+/docs/ @kc-clintone
+
+# GitHub configuration owners
+
+/.github/ @kc-clintone
