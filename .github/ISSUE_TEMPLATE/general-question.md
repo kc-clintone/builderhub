@@ -5,14 +5,14 @@ title: "[QUESTION] "
 labels: ["question"]
 ---
 
-### Question
+## Question
 A clear and concise question about BuilderHub.
 
-### Context
+## Context
 Provide any relevant context or background information.
 
-### What I've tried
+## What I've tried
 Describe what you've already tried or researched.
 
-### Additional Information
+## Additional Information
 Any other details that might help answer your question.
