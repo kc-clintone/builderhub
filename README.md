@@ -148,6 +148,7 @@ We welcome contributions from everyone! Please see our [Contributing Guide](CONT
 
 ### Contributors
 [Silas Lelei](http://github.com/Silas-Labs)
+[Evans Juma](https://github.com/eojuma)
 
 ## License
 
